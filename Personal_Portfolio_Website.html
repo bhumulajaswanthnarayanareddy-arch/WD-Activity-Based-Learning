@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaswanth | Personal Portfolio</title>
+
+    <style>
+        /* Basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.7;
+        }
+
+        /* Navigation bar */
+        header {
+            background: #111827;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 7%;
+        }
+
+        .logo {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 18px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0f172a, #164e63);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: slideUp 1.2s ease;
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 6vw, 55px);
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin: 12px 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            transform: translateY(-3px);
+        }
+
+        /* Common section styles */
+        section:not(.hero) {
+            padding: 65px 8%;
+            text-align: center;
+            scroll-margin-top: 75px;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        /* Cards */
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 15px auto;
+            max-width: 850px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #7dd3fc;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            border: 1px solid #38bdf8;
+            padding: 12px 22px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: #0284c7;
+            transform: scale(1.08);
+        }
+
+        /* Projects and hobbies */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(min(100%, 230px), 1fr)
+            );
+            gap: 20px;
+        }
+
+        .cards .card {
+            margin: 0;
+            width: 100%;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+        }
+
+        .project span {
+            color: #7dd3fc;
+        }
+
+        /* Contact */
+        .contact a {
+            color: #7dd3fc;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #111827;
+            color: #cbd5e1;
+        }
+
+        /* Animation */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 800px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul a {
+                font-size: 13px;
+            }
+
+            section:not(.hero) {
+                padding: 45px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2 class="logo">MyPortfolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p>WELCOME TO MY PERSONAL PORTFOLIO</p>
+            <h1>Hi, I'm <span>Jaswanth</span></h1>
+            <h3>Engineering Student | Future Software Engineer</h3>
+            <p>
+                I love programming, learning new technologies,
+                and creating innovative projects.
+            </p>
+            <a href="#about" class="btn">Explore My Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                Hello! I am B Jaswanth Narayana Reddy, an engineering
+                student interested in Computer Science and Artificial
+                Intelligence. I enjoy learning programming, solving
+                problems, and building useful projects. My goal is to
+                become a skilled software engineer and start a
+                successful company in the future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+
+        <div class="card">
+            <h3>B.Tech - First Year</h3>
+            <p>Computer Science / AI and Machine Learning</p>
+            <p>DR. RVR NRI University</p>
+        </div>
+
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>Shastra Junior College, Vijayawada</p>
+            <p>Percentage: 87%</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Artificial Intelligence</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Gaming</h3>
+                <p>I enjoy playing games in my free time.</p>
+            </div>
+
+            <div class="card">
+                <h3>Bike Riding</h3>
+                <p>I enjoy exploring new places.</p>
+            </div>
+
+            <div class="card">
+                <h3>Learning</h3>
+                <p>I enjoy learning new technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="cards">
+            <div class="card project">
+                <h3>AI Farmer Water Advisor</h3>
+                <p>
+                    A smart farming project concept that uses AI
+                    and sensor data to support irrigation decisions.
+                </p>
+                <span>HTML | CSS | AI</span>
+            </div>
+
+            <div class="card project">
+                <h3>WorkMate</h3>
+                <p>
+                    An application concept designed to connect
+                    people with work opportunities.
+                </p>
+                <span>Application Development</span>
+            </div>
+
+            <div class="card project">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive website that displays my
+                    education, skills, and achievements.
+                </p>
+                <span>HTML | CSS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements & Goals</h2>
+        <div class="card">
+            <p>✓ Scored 87% in Intermediate education.</p>
+            <p>✓ Learning programming and web development.</p>
+            <p>✓ Short-term goal: Become a software engineer.</p>
+            <p>✓ Long-term goal: Build a successful startup.</p>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2>My Resume</h2>
+        <div class="card">
+            <p>Click below to download my resume.</p>
+            <a href="resume.pdf" class="btn" download>
+                Download Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card contact">
+            <p>Email: your-email@example.com</p>
+            <p>Location: Andhra Pradesh, India</p>
+            <p>Let's connect and share ideas!</p>
+            <a href="mailto:your-email@example.com" class="btn">
+                Send Email
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Jaswanth | Personal Portfolio Website</p>
+        <p>Designed using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
