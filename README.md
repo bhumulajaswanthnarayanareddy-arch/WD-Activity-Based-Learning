@@ -50,25 +50,31 @@ The Personal Portfolio Website is designed to introduce me and showcase my educa
 
 **Documentation:** Personal\_Portfolio\_Website\_About.pdf
 
-### 2\. Electronics Store Website
+### 2\. Online Food Ordering Website
 
 **About the Project**
 
-The Electronics Store Website is a sample online shopping website that displays electronic products such as laptops, smartphones, accessories, and smart devices. It provides users with product information in an organized and attractive layout.
+The Online Food Ordering Website is a sample restaurant website that allows users to explore food items, view menus, check prices, and learn about different food categories. It provides an attractive and user-friendly interface for browsing restaurant food options and placing sample orders.
 
 **Features**
 
-*   Product cards with images and prices
+*   Home and restaurant information sections
     
-*   Discount labels
+*   Food menu with images and prices
     
-*   Product specifications
+*   Food categories such as breakfast, lunch, dinner, snacks, and beverages
     
-*   Product comparison table
+*   Food item cards with descriptions
     
-*   Category filtering
+*   Special offers and discount labels
     
-*   Responsive layout for desktop and mobile devices
+*   Add to Cart buttons for sample ordering
+    
+*   Order summary section
+    
+*   Contact and customer information section
+    
+*   Responsive design for desktop and mobile devices
     
 
 **Technologies Used**
@@ -77,8 +83,10 @@ The Electronics Store Website is a sample online shopping website that displays 
     
 *   CSS3
     
+*   JavaScript
+    
 
-**Documentation:** Electronics\_Store\_Website\_About.pdf
+**Documentation:** Online\_Food\_Ordering\_Website\_About.pdf
 
 ### 3\. Tourism and Heritage Information Website
 
@@ -121,7 +129,7 @@ Technologies Used
     
 *   **CSS3:** Used to design layouts, colors, animations, and responsive pages.
     
-*   **JavaScript:** Used to add interactive functionality to the tourism website.
+*   **JavaScript:** Used to add interactive functionality, such as food category filtering, sample cart features, and tourism website filtering.
     
 
 How to Run the Projects
@@ -135,18 +143,36 @@ How to Run the Projects
     
 4.  Alternatively, use the Live Server extension in Visual Studio Code.
     
-5.  Make sure all required images, CSS, JavaScript, and video files are included in the correct folders.
+5.  Make sure all required images, CSS, JavaScript, and other files are included in the correct folders.
     
-
 
 Learning Outcomes
 -----------------
 
-Through these projects, I practiced creating web pages, applying CSS styling, designing responsive layouts, organizing website content, and adding interactive features using JavaScript.
+Through these projects, I practiced:
+
+*   Creating web pages using HTML5.
+    
+*   Applying CSS styling and designing responsive layouts.
+    
+*   Organizing website content into different sections.
+    
+*   Creating attractive food menus and product-style cards.
+    
+*   Adding interactive features using JavaScript.
+    
+*   Understanding basic website navigation and user interface design.
+    
+*   Developing beginner-friendly websites for real-world applications.
+    
 
 Conclusion
 ----------
 
-These three projects helped me develop my basic web development skills and understand how HTML, CSS, and JavaScript work together to create websites. I look forward to learning new technologies and building more projects in the future.
+These three projects helped me develop my basic web development skills and understand how HTML, CSS, and JavaScript work together to create websites.
+
+The Personal Portfolio Website helped me present my personal and educational information. The Online Food Ordering Website helped me understand restaurant menu design and basic online ordering interfaces. The Tourism and Heritage Information Website helped me explore how to present cultural and historical information using interactive web features.
+
+Through these projects, I gained practical experience in designing and developing websites. I look forward to learning new technologies and building more innovative projects in the future.
 
 **Created by:** Bhumula Jaswanth Narayana Reddy**Roll Number:** 26000863**Branch:** CSE (AIML)**Section:** CSM-1
